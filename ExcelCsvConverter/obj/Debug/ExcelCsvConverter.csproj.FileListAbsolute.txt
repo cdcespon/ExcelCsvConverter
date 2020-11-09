@@ -1,10 +1,15 @@
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\bin\Debug\ExcelCsvConverter.exe.config
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\bin\Debug\ExcelCsvConverter.exe
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\bin\Debug\ExcelCsvConverter.pdb
-C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.csprojAssemblyReference.cache
+C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\bin\Debug\SpreadsheetLight.dll
+C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\bin\Debug\SpreadsheetLight.xml
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.MainForm.resources
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.Properties.Resources.resources
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.csproj.GenerateResource.cache
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.csproj.CoreCompileInputs.cache
+C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.csproj.CopyComplete
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.exe
 C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.pdb
+C:\Users\cdces\Documents\GitHub\ExcelCsvConverter\ExcelCsvConverter\obj\Debug\ExcelCsvConverter.csprojAssemblyReference.cache

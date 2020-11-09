@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +42,10 @@
             this.MainPropertyGrid = new System.Windows.Forms.PropertyGrid();
             this.fileListView = new System.Windows.Forms.ListView();
             this.EventLstView = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SmallImageList = new System.Windows.Forms.ImageList(this.components);
             this.MainMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainSplitContainer)).BeginInit();
             this.MainSplitContainer.Panel1.SuspendLayout();
@@ -94,6 +99,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // MainStatusStrip
             // 
@@ -144,16 +150,25 @@
             this.MainPropertyGrid.Name = "MainPropertyGrid";
             this.MainPropertyGrid.Size = new System.Drawing.Size(196, 296);
             this.MainPropertyGrid.TabIndex = 0;
+            this.MainPropertyGrid.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.MainPropertyGrid_PropertyValueChanged);
+            this.MainPropertyGrid.Enter += new System.EventHandler(this.MainPropertyGrid_Enter);
             // 
             // fileListView
             // 
+            this.fileListView.CheckBoxes = true;
+            this.fileListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
             this.fileListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fileListView.HideSelection = false;
             this.fileListView.Location = new System.Drawing.Point(0, 0);
             this.fileListView.Name = "fileListView";
             this.fileListView.Size = new System.Drawing.Size(600, 296);
+            this.fileListView.SmallImageList = this.SmallImageList;
             this.fileListView.TabIndex = 0;
             this.fileListView.UseCompatibleStateImageBehavior = false;
+            this.fileListView.View = System.Windows.Forms.View.List;
             // 
             // EventLstView
             // 
@@ -164,6 +179,26 @@
             this.EventLstView.Size = new System.Drawing.Size(800, 104);
             this.EventLstView.TabIndex = 0;
             this.EventLstView.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Icon";
+            this.columnHeader1.Width = 200;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "ColumnHeader2";
+            this.columnHeader2.Width = 200;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "ColumnHeader3";
+            // 
+            // SmallImageList
+            // 
+            this.SmallImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("SmallImageList.ImageStream")));
+            this.SmallImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.SmallImageList.Images.SetKeyName(0, "excel.ico");
             // 
             // MainForm
             // 
@@ -207,6 +242,10 @@
         private System.Windows.Forms.ListView fileListView;
         private System.Windows.Forms.PropertyGrid MainPropertyGrid;
         private System.Windows.Forms.ListView EventLstView;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ImageList SmallImageList;
     }
 }
 
